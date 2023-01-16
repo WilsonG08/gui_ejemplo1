@@ -6,15 +6,24 @@ public class dialogo {
         //JOptionPane.showMessageDialog(null,"Hola Mundo");
 
 
-        String nombre=
+        /*String nombre=
                 JOptionPane.showInputDialog("¿Cuál es su nombre?:");
         String mensaj=
                 String.format("Bienbenido, %s,  a la progrmcion en Java!",nombre);
 
-        JOptionPane.showMessageDialog(null,mensaj);
+        JOptionPane.showMessageDialog(null,mensaj);*/
+
+
+        double peso=0, altura=0;
 
 
         try{
+
+            do{
+                 peso= Double.parseDouble(JOptionPane.showInputDialog("Ingrese el peso: "));
+                altura= Double.parseDouble(JOptionPane.showInputDialog("Ingrese el altura: "));
+
+            }while (peso<0||altura<1);
 
         }catch (Exception ex){
             JOptionPane.showMessageDialog(null,"\n\tEROR");
