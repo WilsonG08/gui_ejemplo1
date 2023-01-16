@@ -14,6 +14,13 @@ public class dialogo {
         JOptionPane.showMessageDialog(null,mensaj);
 
 
+        try{
+
+        }catch (Exception ex){
+            JOptionPane.showMessageDialog(null,"\n\tEROR");
+        }
+
+
 
     }
 }
